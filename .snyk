@@ -1,8 +1,66 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:tunnel-agent:20170305':
     - ghost-ignition > bunyan-loggly > loggly > request > tunnel-agent:
         patched: '2018-06-26T05:06:14.503Z'
+  'npm:debug:20170905':
+    - sqlite3 > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:debug:20170905'
+        path: sqlite3 > node-pre-gyp > tar-pack > debug
+    - knex-migrator > sqlite3 > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:debug:20170905'
+        path: knex-migrator > sqlite3 > node-pre-gyp > tar-pack > debug
+  'npm:extend:20180424':
+    - sqlite3 > node-pre-gyp > request > extend:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:extend:20180424'
+        path: sqlite3 > node-pre-gyp > request > extend
+    - knex-migrator > sqlite3 > node-pre-gyp > request > extend:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:extend:20180424'
+        path: knex-migrator > sqlite3 > node-pre-gyp > request > extend
+  'npm:moment:20170905':
+    - ghost-ignition > bunyan > moment:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:moment:20170905'
+        path: ghost-ignition > bunyan > moment
+    - knex-migrator > ghost-ignition > bunyan > moment:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:moment:20170905'
+        path: knex-migrator > ghost-ignition > bunyan > moment
+    - passport-ghost > ghost-ignition > bunyan > moment:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:moment:20170905'
+        path: passport-ghost > ghost-ignition > bunyan > moment
+  'npm:ms:20170412':
+    - sqlite3 > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:ms:20170412'
+        path: sqlite3 > node-pre-gyp > tar-pack > debug > ms
+    - knex-migrator > sqlite3 > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:ms:20170412'
+        path: knex-migrator > sqlite3 > node-pre-gyp > tar-pack > debug > ms
+  'npm:stringstream:20180511':
+    - sqlite3 > node-pre-gyp > request > stringstream:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:stringstream:20180511'
+        path: sqlite3 > node-pre-gyp > request > stringstream
+    - knex-migrator > sqlite3 > node-pre-gyp > request > stringstream:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:stringstream:20180511'
+        path: knex-migrator > sqlite3 > node-pre-gyp > request > stringstream
+  'npm:tough-cookie:20170905':
+    - sqlite3 > node-pre-gyp > request > tough-cookie:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:tough-cookie:20170905'
+        path: sqlite3 > node-pre-gyp > request > tough-cookie
+    - knex-migrator > sqlite3 > node-pre-gyp > request > tough-cookie:
+        patched: '2023-08-31T18:04:48.679Z'
+        id: 'npm:tough-cookie:20170905'
+        path: knex-migrator > sqlite3 > node-pre-gyp > request > tough-cookie
